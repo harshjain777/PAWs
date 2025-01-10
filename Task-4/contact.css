@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: orange;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 30px 0;
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info .info {
+    text-align: center;
+  }
+  
+  .contact-info .info i {
+    font-size: 2rem;
+    color: orange;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info .info p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Form */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  form input,
+  form textarea,
+  form button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  form button {
+    background-color: orange;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+  }
+  
+  form button:hover {
+    background-color: orange;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: orange;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  

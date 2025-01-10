@@ -1,0 +1,86 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    color: #333;
+}
+
+.header {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.pet-info {
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.pet-image {
+    flex: 1 1 40%;
+    max-width: 300px;
+    border-radius: 10px 0 0 10px;
+}
+
+.pet-details {
+    flex: 1 1 60%;
+    padding: 20px;
+}
+
+.pet-details h2 {
+    margin-top: 0;
+    color: gray;
+}
+
+.pet-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pet-details ul li {
+    margin: 5px 0;
+}
+
+.adopt-button {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.adopt-button:hover {
+    background-color: gray;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}

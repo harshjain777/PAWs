@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Use for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link To CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- link To JS -->
+    <script src="script.js" defer></script>
+    <!-- For Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- For Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link For Gsap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Link For Gsap - Scroll Trigger -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Link For Lenis - Smooth Scrolling -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <!-- Link For Split Type -->
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+
+    <title>PAWs| Pet Adoption Website </title>
+  </head>
+  <body>
+    <!-- navbar start-->
+    <nav>
+        <a href="index.html" class="brand">
+            <h1>PA<b class="accent">Ws</b></h1>
+        </a>
+            <div class="menu">
+                <div class="btn">
+                    <i class="fas fa-times close-btn"></i>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="index.html#pets">Pets</a>
+                <a href="index.html#requirements">Requirements</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#stories">Stories</a>
+            </div>
+
+            <button class="btn-2" onclick="window.location.href='Pets/adopt.html'">
+                <p>Adopt Now</p>
+                <i class="fa-solid fa-circle-arrow-right"></i>
+            </button>
+
+            <div class="btn">
+                <i class="fas fa-bars menu-btn"></i>
+            </div>
+    </nav>
+        <!-- navbar end-->
+
+    <!-- Hero Page -->
+    <section class="heropage">
+     <div class="hero-headlines">
+        <h1>Find Your Purrfect Pet Soul Today!</h1>
+        <p>Discover Your Perfect Companion in Our Selection of Loving Pets Available for Adoption.</p>
+        <div class="hero-headlines-buttons">
+            <button class="btn-3 " onclick="window.location.href='pets.html'">Our Pets </button>
+            <button class="btn-3 btn-transparent" onclick="window.location.href='contact.html'">
+              Contact Us 
+            </button>
+          </div>
+        </div>
+        <div class="hero-images">
+            <img src="img/hero-img-1.png" alt="img">
+            <img src="img/hero-img-2.png" alt="img">
+            <img src="img/hero-img-3.png" alt="img">
+        </div>
+    </section>
+
+<!-- Hero Page End -->
+
+<!-- Requirement Section start-->
+<section class="requirements" id="requirements">
+  <div class="requirements-content">
+    <div class="requirements-headlines">
+      <h1>Our Process for Adoption</h1>
+      <p>Our process is simple and filled with joy every step of the way:</p>
+    </div>
+    <div class="r-item-container">
+      <!-- Item 1 -->
+      <div class="r-item">
+        <div class="r-logo" style="background-color: #b9ff46;">
+          <i class="fa-regular fa-newspaper"></i>
+        </div>
+        <h5>Submitting an Application</h5>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="r-item">
+        <div class="r-logo" style="background-color: #fff846;">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <h5>Attending an Online Interview</h5>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="r-item">
+        <div class="r-logo" style="background-color: #ff8846;">
+          <i class="fa-solid fa-paw"></i>
+        </div>
+        <h5>Meeting the Pet in Person</h5>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="r-item">
+        <div class="r-logo" style="background-color: #46c7ff;">
+          <i class="fa-regular fa-file-zipper"></i>
+        </div>
+        <h5>Signing an Adoption Agreement</h5>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="r-item">
+        <div class="r-logo" style="background-color: #4fffca;">
+          <i class="fa-solid fa-handshake"></i>
+        </div>
+        <h5>Congratulations on Adopting a Pet!</h5>
+      </div>
+    </div>
+  </div>
+  <div class="requirements-img">
+    <img src="img/requirements-img.png" alt="Requirements Process" />
+  </div>
+</section>
+<!-- Requirement Section end -->
+
+
+<!-- Pet Section start-->
+<section class="pets" id="pets">
+  <div class="pets-headlines">
+    <i class="fa-solid fa-paw"></i>
+    <h1>Meet Your Soul Pets</h1>
+  </div>
+
+  <div class="pets-collection">
+    <div class="pet-item">
+      <img src="img/pet-item-1.png" alt="img" />
+      <h3>Tommy</h3>
+    </div>
+
+    <div class="pet-item">
+      <img src="img/pet-item-2.png" alt="img" />
+      <h3>Jimmy</h3>
+    </div>
+
+    <div class="pet-item">
+      <img src="img/pet-item-3.png" alt="img" />
+      <h3>Ruby</h3>
+    </div>
+  </div>
+
+  <div class="pets-find-more">
+    <button class="btn-find-more" onclick="window.location.href='pets.html'"> 
+      <p>Find More</p>
+      <i class="fa-solid fa-arrow-right-long"></i>
+    </button>
+  </div>
+</section>
+
+<!-- Pet Section end-->
+
+
+<!-- About Section -->
+ <div class="about" id="about">
+  <div class="about-headlines">
+    <h1>About Us</h1>
+    <p 
+    class="reveal-type"
+    data-bg-color="#cccccc"
+    data-fg-color="black"
+    >
+    PAWs is not just a 
+    <b> pet adoption website </b>, 
+    it's a heaven for both pets in search of their forever homes and compassionate individuals
+    ready to welcome them with open arms.
+    </p>
+    <div class="about-info">
+      <div class="about-info-item">
+        <h5>100+</h5>
+        <h6>Saved Pets</h6>
+      </div>
+      <hr class="about-info-divider" />
+      <div class="about-info-item">
+        <h5>100%</h5>
+        <h6>Adoption Rate</h6>
+      </div>
+      <hr class="about-info-divider" />
+      <div class="about-info-item">
+        <h5>5 star</h5>
+        <h6>Community Loved</h6>
+      </div>
+    </div>
+    <button class="btn-3" onclick="window.location.href='Pets/adopt.html'">
+      Get Started
+    </button>
+  </div>
+  <img src="img/about-img.png" alt="img" />
+ </div>
+<!-- About section end-->
+
+<!-- Testimonials Section-->
+ <div class="testimonials" id="stories">
+  <h6>OUR REVIEWS</h6>
+  <h1>What people Say</h1>
+
+  <div class="testimony-container">
+    <!--Testimony item 1-->
+    <div class="testimony-item">
+      <div class="testimony-people">
+        <div class="testimony-name">
+          <img src="img/testimony-image-1.png" alt="img" />
+          <div class="testimony-name-item">
+            <h4>Yash Singh</h4>
+            <p>Tommy's Owner</p>
+          </div>
+        </div>
+        <i class="fa-solid fa-quote-right"></i>
+      </div>
+      <p>
+        My experience with PAWs has been nothing short of amazing. 
+        After losing my previous pet, I was hesitant to open my heart again, 
+        but PAWs made the process smooth and comforting.
+      </p>
+    </div>
+
+        <!--Testimony item 2-->
+        <div class="testimony-item">
+          <div class="testimony-people">
+            <div class="testimony-name">
+              <img src="img/testimony-image-2.png" alt="img" />
+              <div class="testimony-name-item">
+                <h4>Pranav Pujji</h4>
+                <p>Jimmy's Owner</p>
+              </div>
+            </div>
+            <i class="fa-solid fa-quote-right"></i>
+          </div>
+          <p>
+            As a long-time advocate for pet adoption, 
+            I can confidently say that PAWs goes above and 
+            beyond in their mission to find loving homes for animals in need.
+          </p>
+        </div>
+
+            <!--Testimony item 3-->
+    <div class="testimony-item">
+      <div class="testimony-people">
+        <div class="testimony-name">
+          <img src="img/testimony-image-3.png" alt="img" />
+          <div class="testimony-name-item">
+            <h4>Shreya Arora</h4>
+            <p>Ruby's Owner</p>
+          </div>
+        </div>
+        <i class="fa-solid fa-quote-right"></i>
+      </div>
+      <p>
+        I will forever be grateful to PAWs for bringing my best friend into my life. 
+        Adopting a pet was a big decision for me, 
+        but PAWs made it feel like the most natural choice in the world.
+      </p>
+    </div>
+  </div>
+ </div>
+<!-- Testimonials Section End-->
+
+<!-- Footer section-->
+ <footer id="footer">
+  <div class="footer-container">
+    <div class="footer-links">
+        <h2>Quick Links</h2>
+        <div class="link-container">
+          <div class="links">
+            <a href="/"> Home </a>
+            <a href="index.html#about"> About </a>
+            <a href="index.html#pets"> Pets </a>
+          </div>
+          <div class="links">
+            <a href="index.html#requirements"> Requirements </a>
+            <a href="index.html#stories"> Stories </a>
+            <a href="contact.html"> Contact Us </a>
+          </div>
+        </div>
+        </div>
+      <div class="footer-brand">
+        <h1>PA<b class="accent">Ws</b></h1>
+        <p>Find Your PurrFect Pet Soul Today!</p>
+        <div class="social">
+          <a href="https://www.facebook.com/groups/670015149801465/"><i class="fa-brands fa-facebook-f"></i>
+          <a href="https://www.instagram.com/reels/DCWXFuJyLDS/"><i class="fa-brands fa-instagram"></i>
+          <a href="https://x.com/c397889"><i class="fa-brands fa-twitter"></i>
+          <a href="https://www.linkedin.com/in/yash-c-6a85162b0/"><i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+        </div>
+        <div class="footer-contact-info">
+          <div class="contact-info-item">
+            <i class="fa-regular fa-envelope"></i>
+            <p>pawsofcuties@gmail.com</p>
+          </div>    
+          <div class="contact-info-item">
+            <i class="fa-solid fa-phone"></i>
+            <p>+91-022-12365-23</p>
+          </div>    
+    </div>
+  </div>
+  <h4 class="copyright">All rights Reserved to <b>PAWs</b> org 2025</h4>
+ </footer>
+<!-- Footer Section End-->
+
+  </body>
+</html>

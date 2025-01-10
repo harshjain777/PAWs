@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt a Pet - Pet Adoption</title>
+  <link rel="stylesheet" href="adopt.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Adopt a Pet</h1>
+  </header>
+  <div class="container">
+    <section class="adopt-section">
+      <h2>Fill Out the Form to Adopt Your New Best Friend</h2>
+      <form action="#" method="post" class="adopt-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" placeholder="Enter your full address" required></textarea>
+
+        <label for="pet">Select a Pet:</label>
+        <select id="pet" name="pet" required>
+          <option value="" disabled selected>Select a pet</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="bird">Bird</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="message">Why Do You Want to Adopt?</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us about your reasons and plans" required></textarea>
+
+        <button type="submit">Submit Application</button>
+      </form>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 PAWs | <a href="#privacy-policy">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>
