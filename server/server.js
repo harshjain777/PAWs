@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser')
 const cors = require('cors');
 const contactMess = require('./router/contact.router.js')
+const adoptingSec = require('./router/adopt.router.js')
 
 
 mongoose.connect(
@@ -30,6 +31,7 @@ app.use(
 app.use(cookieParser());
 app.use(express.json());
 app.use('/api/contact',contactMess);
+app.use('/api/adoption',adoptingSec);
 //app.use("/api/admin/products",adminProductRouter)
 //app.use("/api/shop/products",shopProductRouter)
 
